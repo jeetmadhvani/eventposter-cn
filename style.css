@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Titan-One;
+    src: url(TitanOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Passions-Conflict;
+    src: url(PassionsConflict-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cherry-Bomb-One; 
+    src: url(PottaOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient( 180deg, rgb(251, 216, 169),  rgb(180, 169, 154));
+}
+
+.main{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    max-height: 800px;
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    text-align: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+}
+
+.top-img img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(184, 156, 156, 0.1) 100%);
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: antiquewhite;
+    margin-top: 80px;
+    text-shadow: 0px 0px 2px rgb(56, 52, 46);
+    z-index: 2;
+}
+
+.header{
+    font-family: Titan-One;
+    font-size: 80px;
+}
+
+.desc{
+    font-family: Passions-Conflict;
+    font-size: 100px;
+    line-height: .75px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    z-index: 2;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-family: Cherry-Bomb-One;
+    color: antiquewhite;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+    gap: 5px;
+}
+
+.cost{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid antiquewhite;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    gap: .75px;
+    border-radius: 5px;
+}
+
+.highlight{
+    font-size: 30px;
+}
+
+.venue{
+    border: 1px solid antiquewhite;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.date{
+    border: 1px solid antiquewhite;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;  
+    border-radius: 5px;
+}
+
+.time{
+    border: 1px solid antiquewhite;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.qr{
+    position: absolute;
+    z-index: 2;
+    height: 26%;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 5px;
+}
+
+.bottom-mid{
+    z-index: 2;
+}
