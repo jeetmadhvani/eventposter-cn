@@ -142,3 +142,23 @@ html, body{
 .bottom-mid{
     z-index: 2;
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 50px;
+  }
+  .desc {
+    font-size: 60px;
+  }
+  .bottom {
+    position: static;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .qr {
+    position: static;
+    margin-top: 20px;
+    height: 150px;
+  }
+}
