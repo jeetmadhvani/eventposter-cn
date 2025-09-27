@@ -47,7 +47,7 @@ html, body{
 .top-img img{
     width: 100%;
     max-width: 600px;
-    border-radius: 16px;
+    border-radius: 1em;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(184, 156, 156, 0.1) 100%);
 }
 
@@ -56,109 +56,98 @@ html, body{
     flex-direction: column;
     position: absolute;
     color: antiquewhite;
-    margin-top: 80px;
+    margin-top: 5em;
     text-shadow: 0px 0px 2px rgb(56, 52, 46);
     z-index: 2;
 }
 
 .header{
     font-family: Titan-One;
-    font-size: 80px;
+    font-size: 5em;
 }
 
 .desc{
     font-family: Passions-Conflict;
-    font-size: 100px;
-    line-height: .75px;
+    font-size: 6rem;
+    line-height: .05em;
 }
 
 .bottom{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-left: 20px;
+    gap: .4rem;
+    padding: 1em;
     z-index: 2;
     position: absolute;
-    bottom: 20px;
-    left: 10px;
+    bottom: 0%;
+    left: 0%;
     font-family: Cherry-Bomb-One;
     color: antiquewhite;
     text-shadow: 0px 0px 4px rgb(0, 0, 0);
     gap: 5px;
+    font-size: 1em;
 }
 
 .cost{
     display: flex;
     flex-direction: column;
     border: 1px solid antiquewhite;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 15px;
-    gap: .75px;
-    border-radius: 5px;
+    border-radius: .4em;
+    padding: .4em;
 }
 
 .highlight{
-    font-size: 30px;
+    line-height: 1em;
+    font-size: 2em;
 }
 
 .venue{
     border: 1px solid antiquewhite;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    border-radius: 5px;
+    border-radius: .4em;
+    padding: .4em;
 }
 
 .date{
-    border: 1px solid antiquewhite;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;  
-    border-radius: 5px;
+    border: 1px solid antiquewhite; 
+    border-radius: .4em;
+    padding: .4em;
 }
 
 .time{
     border: 1px solid antiquewhite;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    border-radius: 5px;
+    border-radius: .4em;
+    padding: .4em;
 }
 
 .qr{
     position: absolute;
     z-index: 2;
-    height: 26%;
-    bottom: 20px;
-    right: 30px;
-    border-radius: 5px;
+    height: 13em;
+    bottom: 0%;
+    right: 0%;
+    border-radius: .8em; 
+    padding: 1em;
 }
 
-.bottom-mid{
-    z-index: 2;
+@media screen and (max-width: 420px){
+
+.header{
+    font-size: 3.5em;
 }
 
-@media screen and (max-width: 600px) {
-  .header {
-    font-size: 50px;
-  }
-  .desc {
-    font-size: 60px;
-  }
-  .bottom {
-    position: static;
-    text-align: center;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  .qr {
-    position: static;
-    margin-top: 20px;
-    height: 150px;
-  }
+.desc{
+    font-size: 4.2em;
+}
+
+.bottom{
+    font-size: .7em;
+}
+
+.highlight{
+    font-size: 1.4em;
+}
+
+.qr{
+    height: 9.1em;
+}
 }
